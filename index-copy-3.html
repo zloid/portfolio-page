@@ -25,6 +25,8 @@
 
       $(".all-span").text(n + n2 + n4);
     });
+
+
   </script>
 </head>
 
@@ -54,7 +56,7 @@
   <div class="container">
     <div id="posts">
 
-<!-- 
+      <!-- 
   <div class="container">
       <div class="row">
         <div class="col bg-info p-2 m-1 post ">Column</div>
@@ -70,15 +72,15 @@
       <div class="row">
           <div class="container">
               <div class="row">
-                <div class="col-sm-3 bg-info p-3">Column1</div>
-                <div class="col-sm-3 bg-info p-3">Column2</div>
-                <div class="col-sm-3 bg-info p-3">Column3</div>
+                <div class="col-sm-3 p-0">Column1</div>
+                <div class="col-sm-3 p-0">Column2</div>
+                <div class="col-sm-3 p-0">Column3</div>
 
-                <div class="col-sm-3 bg-info p-3">Column4</div>
-                <div class="col-sm-3 bg-info p-3">Column5</div>
-                <div class="col-sm-3 bg-info p-3">Column6</div>
+                <div class="col-sm-3 p-0">Column4</div>
+                <div class="col-sm-3 p-0">Column5</div>
+                <div class="col-sm-3 p-0">Column6</div>
 
-                <div class="col-sm-3 bg-info p-3">Column7</div>
+                <div class="col-sm-3 p-0">Column7</div>
               </div>
             </div>
       </div> -->
@@ -86,50 +88,41 @@
 
 
       <div class="row">
-        <div class="post pureJs col-sm-3 bg-info p-3">
-          1) post pureJs post pureJs Lorem ipsum dolor sit
-          
-        </div>
-        <div class="post htmlcssjs col-sm-3 bg-info p-3">
-          2) ipsum dolor sit amet consectetur
-          adipisicing elit. Sed, molestias pariatur sint eaque libero itaque vel
-          
+
+
+        <div class="post htmlcssjs col-sm-3 p-0">
+            <p class="post-content">has made: HTML + CSS from PSD layout</p>  
+          <a target="_blank" href="http://deals-site.zloid.ru/">
+              <img class="img-fluid" src="images/deals-fest-site-2.jpg" alt="image">              
+          </a>
         </div>
 
-        <div class=" post htmlcssjs col-sm-3 bg-info p-3">
-          3) orem ipsum dolor
-          sit amet consectetur adipisicing elit. Sed, molestias pariatur sint eaque libero itaque vel
-          
+        <div class=" post htmlcssjs col-sm-3 p-0">
+          3) orem
         </div>
         <!-- <div class="w-100"></div> -->
-        <div class=" post htmlcssjs col-sm-3 bg-info p-3">
-          4) orem ipsum dolor
-          sit amet consectetur adipisicing elit. Sed, molestias pariatur sint eaque libero itaque vel
-           
+        <div class=" post htmlcssjs col-sm-3 p-0">
+          4) orem
         </div>
 
-        <div class=" post htmlcssjs col-sm-3 bg-info p-3">
-          5) orem ipsum dolor
-          sit amet consectetur adipisicing elit. Sed, molestias pariatur sint eaque libero itaque vel
-           
+        <div class=" post htmlcssjs col-sm-3 p-0">
+          5) orem
         </div>
 
-        <div class=" post htmlcssjs col-sm-3 bg-info p-3">
-          6) orem ipsum dolor
-          sit amet consectetur adipisicing elit. Sed, molestias pariatur sint eaque libero itaque vel
-           
+        <div class=" post htmlcssjs col-sm-3 p-0">
+          6) orem
         </div>
 
-        <div class=" post wordpress col-sm-3 bg-info p-3">
-          7) orem ipsum dolor
-          sit amet consectetur adipisicing elit. Sed, molestias pariatur sint eaque libero itaque vel
-          
+        <div class="post pureJs col-sm-3 p-0">
+          1) post
         </div>
 
-        <div class=" post wordpress col-sm-3 bg-info p-3">
-          8) orem ipsum dolor
-          sit amet consectetur adipisicing elit. Sed, molestias pariatur sint eaque libero itaque vel
-           
+        <div class=" post wordpress col-sm-3 p-0">
+          7) orem
+        </div>
+
+        <div class=" post wordpress col-sm-3 p-0">
+          8) orem
         </div>
 
 
@@ -214,6 +207,28 @@
       crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"></script>
+
+    <script>
+      function resizeAudioProgressCover() {
+        let widthPostNum = document.querySelector('.post').offsetWidth;
+        let postAllObj = document.querySelectorAll('.post');
+        
+        let imgAllObg = document.querySelectorAll('.img-fluid');
+        
+
+
+        for (let i = 0; i < postAllObj.length; i++) {
+          postAllObj[i].style.height = widthPostNum + 'px';
+        }
+        for (let i = 0; i < imgAllObg.length; i++) {
+          imgAllObg[i].style.height = widthPostNum + 'px';
+        }
+      }
+      window.onload = resizeAudioProgressCover();
+      window.addEventListener('resize', () => {
+        resizeAudioProgressCover();
+      })
+    </script>
 </body>
 
 </html>
