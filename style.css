@@ -1,6 +1,7 @@
 ::-webkit-scrollbar {
     width: 0px;
 }
+
 /* 
 * {
     margin: 0;
@@ -22,7 +23,7 @@ body {
 
 h1 {
     /* padding: 10px 15px 20px 15px; */
-    padding: 10px;
+    padding: 10px 0;
 }
 
 h1 a {
@@ -50,6 +51,7 @@ h1 a {
     color: #FFF;
     cursor: pointer;
     padding: 5px 15px;
+    margin: 5px 0;
 }
 
 #filter button.active {
@@ -61,17 +63,11 @@ h1 a {
     outline: 0;
 }
 
-#posts {
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
-}
-
+/* 
+=========================TODO===============================
 #posts .post {
-    /*width: 25%;*/
     width: 30%;
-    /*width: 20%;*/
     float: left;
-    /* height: 250px; */
     overflow: hidden;
     text-align: center;
     cursor: pointer;
@@ -81,7 +77,8 @@ h1 a {
     background: #2e5d5a;
     margin: 1px;
     border-radius: 3px;
-}
+} */
+
 /* 
 #posts .post img {
     position: relative;
@@ -163,19 +160,20 @@ h1 a {
     -webkit-transform: translate3d(-40px, 0, 0);
     transform: translate3d(-40px, 0, 0);
 } */
+
 /* 
 #posts .post:hover p {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 } */
+
 /* 
 @media screen and (max-width: 600px) {
     #posts .post {
         width: 98%;
     }
 } */
-
 
 .port {
     letter-spacing: 3px;
@@ -197,3 +195,53 @@ h1 a {
     color: tomato;
     padding: 1px 3px 1px 3px;
 }
+
+.post {
+    float: left !important;
+    outline: 1px solid #fff;
+    /* margin: 1px; */
+    /* width: 30% !important; */
+}
+
+/* 
+.row, #posts {
+  margin: 0 auto !important;
+} */
+
+.container {
+    background: #fff;
+}
+
+.row {
+    background: #ccc;
+}
+
+@media (min-width: 576px) {
+    .col-sm-3 {
+        -ms-flex: 0 0 50% !important;
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        /* outline: 1px solid #fff; */
+        height: 300px;
+        /* float: left !important; */
+    }
+  }
+
+@media (min-width: 720px) {
+    .col-sm-3 {
+        -ms-flex: 0 0 33% !important;
+        flex: 0 0 33% !important;
+        max-width: 33% !important;
+        /* outline: 1px solid #fff; */
+        height: 300px;
+        /* float: left !important; */
+    }
+  }
+/* 
+@media (min-width: 720px) {
+    .col-sm-3 {
+        -ms-flex: 0 0 50% !important;
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+  } */
