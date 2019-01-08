@@ -1,239 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>My works</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
-    <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        var n = ( $( ".htmlcssjs" ).length - 1);
-        $(".htmlcssjs-span").text(n);
-  
-        var n2 = ( $( ".wordpress" ).length - 1);
-        $(".wordpress-span").text(n2);     
-        
-        var n4 = ( $( ".pureJs" ).length - 1);
-        $(".pureJsSpan").text(n4);
-      
-        $(".all-span").text(n + n2 + n4);
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      let n = ($(".htmlcssjs").length - 1);
+      $(".htmlcssjs-span").text(n);
 
-        // var n3 = ( $( ".skills" ).length - 1);
-        // $(".skills-span").text(n3);
-        
-        
+      let n2 = ($(".wordpress").length - 1);
+      $(".wordpress-span").text(n2);
+
+      let n4 = ($(".pureJs").length - 1);
+      $(".pureJsSpan").text(n4);
+
+      $(".all-span").text(n + n2 + n4);
     });
-    </script>
- 
+  </script>
 </head>
+
 <body>
-  <h1 align="center"><a target="_blank" href="https://web.facebook.com/sergey.voytehovich">Sergey Voytehovich <span class="port">port</span><img src="images/fb-left-aside.png" alt="fb icon">olio</a></h1>
- 
+  <h1 align="center"><a target="_blank" href="https://web.facebook.com/sergey.voytehovich">Sergey Voytehovich <span
+        class="port">port</span><img src="images/fb-left-aside.png" alt="fb icon">olio</a></h1>
+
   <div id="filter">
     <button class="all active" disabled="disabled">ALL <span class="all-span"></span></button>
-    <button class="htmlcssjs">HTML + CSS + JS <span class="htmlcssjs-span"></span>
-    </button>
+    <button class="htmlcssjs">HTML, CSS, JS <span class="htmlcssjs-span"></span></button>
     <button class="wordpress">Wordpress <span class="wordpress-span"></span></button>
-    <button class="pureJs">Pure JavaScript <span class="pureJsSpan"></span></button>
-    <!-- <button class="skills">My skills <span class="skills-span"></span></button> -->
-    <a style="color: #fff" href="https://github.com/zloid">GitHub</a>
+    <button class="pureJs">JavaScript <span class="pureJsSpan"></span></button>
+    <a style="color: #fff" href="https://github.com/zloid"><u>GitHub</u></a>
   </div>
 
-  <div id="posts">
-    
-    <div class="post htmlcssjs" style="display: block;"><img src="images/deals-fest-site-2.jpg">
-        <div class="post-content">
-            <!-- <h2>title</h2> -->
+  <div class="container">
+    <div id="posts">
+      <div class="row">
+
+        <div class="post htmlcssjs col-sm-3 p-0">
+          <a target="_blank" href="http://zoo10.zloid.ru/fun-me-playlist.php">
+            <p>has made: bootstrap based site</p>
+            <img class="img-fluid" src="images/zoo-10.jpg" alt="image">
+          </a>
+        </div>
+        <div class="post htmlcssjs col-sm-3 p-0">
+          <a target="_blank" href="http://corporate-blue.zloid.ru/">
             <p>has made: HTML + CSS from PSD layout</p>
-            <a target="_blank" href="http://deals-site.zloid.ru/">View more</a> 
-          </div>
-      </div>
-
-    <div class="post htmlcssjs" style="display: block;"><img src="images/corporate-blue.jpg">
-      <div class="post-content">
-          <!-- <h2>title</h2> -->
-          <p>has made: HTML + CSS from PSD layout</p>
-          <a target="_blank" href="http://corporate-blue.zloid.ru/">View more</a> 
+            <img class="img-fluid" src="images/corporate-blue-2.jpg" alt="image">
+          </a>
         </div>
-    </div>
-    
-      <div class="post wordpress" style="display: block;"><img src="images/stroika-1-ru-2.jpg">
-        <div class="post-content">
-            <!-- <h2>title</h2> -->
-            <p>has made: install on server, configured plugins and ads, posted articles. Traffic: 200 per day.</p>
-            <a target="_blank" href="http://stroika-1.ru/oremonte/vetryak-dlya-chastnogo-doma.html">View more</a> 
+        <div class="post htmlcssjs col-sm-3 p-0">
+          <a target="_blank" href="http://deals-site.zloid.ru/">
+            <p>has made: HTML + CSS from PSD layout</p>
+            <img class="img-fluid" src="images/deals-fest-site-4.jpg" alt="image">
+          </a>
         </div>
-      </div>
-      
-      <!--Pure JS Block-->
-      
-      <div class="post pureJs" style="display: block;"><img src="images/calc.png">
-        <div class="post-content">
-            <!-- <h2>title</h2> -->
+        <div class="post wordpress col-sm-3 p-0">
+          <a target="_blank" href="http://stroika-1.ru/oremonte/vetryak-dlya-chastnogo-doma.html">
+            <p>has made: install on server, configured plugins and ads, posted articles. Traffic: 200 per day</p>
+            <img class="img-fluid" src="images/stroika-1-ru-3.jpg" alt="image">
+          </a>
+        </div>
+        <div class="post pureJs col-sm-3 p-0">
+          <a target="_blank" href="http://calc.zloid.ru/">
             <p>has made: math calculator on pure JS</p>
-            <a target="_blank" href="http://calc.zloid.ru/">View more</a> 
+            <img class="img-fluid" src="images/pureJsCalc-2.jpg" alt="image">
+          </a>
         </div>
-      </div>
-      <div class="post pureJs" style="display: block;"><img src="images/player-zloid-ru-5.png">
-        <div class="post-content">
-            <!-- <h2>title</h2> -->
+        <div class="post pureJs col-sm-3 p-0">
+          <a target="_blank" href="http://player.zloid.ru/">
             <p>has made: Audio player on pure JS</p>
-            <a target="_blank" href="http://player.zloid.ru/">View more</a> 
+            <img class="img-fluid" src="images/player-zloid-ru-6.jpg" alt="image">
+          </a>
         </div>
-      </div>
-      
-      <!--end of Pure JS Block-->
 
+      </div><!-- <div class="row"> -->
+    </div><!-- <div id="posts"> -->
+    <div class="hidden"></div>
+  </div><!-- <div class="container"> -->
 
-<!-- SKILLS BLOCK
+  <script>
+    $(document).ready(function () {
 
-      <div class="post skills" style="display: block;">
-        
-        <div class="post-content">
-            <h2>HTML5 - 30%</h2>
-            <p>My level of HTML5 skills</p>
-            
-        </div>
-      </div>
+      $('.hidden').css('display', 'none');
 
-      <div class="post skills" style="display: block;">
-        
-        <div class="post-content">
-            <h2>CSS3 - 30%</h2>
-            <p>My level of CSS3 skills</p>
-            
-        </div>
-      </div>
+      $("#filter button").each(function () {
 
-      <div class="post skills" style="display: block;">
-        
-        <div class="post-content">
-            <h2>Javascript - 3%</h2>
-            <p>My level of Javascript skills</p>
-            
-        </div>
-      </div>    
+        $(this).on("click", function () {
 
-      <div class="post skills" style="display: block;">
-        
-        <div class="post-content">
-            <h2>Bootstrap - 0%</h2>
-            <p>My level of Bootstrap skills</p>
-            
-        </div>
-      </div>     
+          let filter = $(this).attr('class');
 
-      <div class="post skills" style="display: block;">
-        
-        <div class="post-content">
-            <h2>jQuery - 0%</h2>
-            <p>My level of jQuery skills</p>
-            
-        </div>
-      </div>
+          if ($(this).attr('class') == 'all') {
+            $('.hidden').contents().appendTo('#posts').hide().show('slow');
+            $("#filter button").removeClass('active');
+            $(this).addClass('active');
+            $("#filter button").attr("disabled", false);
+            $(this).attr("disabled", true);
+          }
+          else {
+            $('.post').appendTo('.hidden');
+            $('.hidden').contents().appendTo('#posts').hide().show('slow');
+            $('.post:not(.' + filter + ')').appendTo('.hidden').hide('slow');
+            $("#filter button").removeClass('active');
+            $(this).addClass('active');
+            $("#filter button").attr("disabled", false);
+            $(this).attr("disabled", true);
+          };
 
-       <div class="post skills" style="display: block;">
-        
-        <div class="post-content">
-            <h2>GIT - 0%</h2>
-            <p>My level of GIT skills</p>
-            
-        </div>
-      </div>    
+        });
 
-      <div class="post skills" style="display: block;">
-        
-        <div class="post-content">
-            <h2>Gulp - 0%</h2>
-            <p>My level of Gulp skills</p>
-            
-        </div>
-      </div>     
-
-       <div class="post skills" style="display: block;">
-        
-        <div class="post-content">
-            <h2>SASS - 0%</h2>
-            <p>My level of SASS skills</p>
-            
-        </div>
-      </div>      
-
-      <div class="post skills" style="display: block;">
-        
-        <div class="post-content">
-            <h2>Angular.js - 0%</h2>
-            <p>My level of Angular.js skills</p>
-            
-        </div>
-      </div>      
-
-      <div class="post skills" style="display: block;">
-        
-        <div class="post-content">          
-            <h2>React.js - 0%</h2>
-            <p>My level of React.js skills</p>
-            
-        </div>
-      </div>      
-<!-- END SKILLS BLOCK -->      
-
-      <!-- end all works-blocks -->
-      <div class="hidden" style="display: none;">
-    </div>
-
-<script src="js/jquery.min.js"></script>
-<script>
-
-$(document).ready(function(){
-
-  $('.hidden').css('display','none');
-
-  $( "#filter button" ).each(function() {
-
-    $(this).on("click", function(){
-
-         var filter = $(this).attr('class');         
-
-      if ( $(this).attr('class') == 'all' ) {
-         $('.hidden').contents().appendTo('#posts').hide().show('slow');
-         $( "#filter button" ).removeClass('active');
-         $(this).addClass('active');
-         $("#filter button").attr("disabled", false);
-         $(this).attr("disabled", true);
-      }
-      else {
-         $('.post').appendTo('.hidden');
-         $('.hidden').contents().appendTo('#posts').hide().show('slow');
-         $('.post:not(.' + filter + ')').appendTo('.hidden').hide('slow');
-         $( "#filter button" ).removeClass('active');
-         $(this).addClass('active');
-         $("#filter button").attr("disabled", false);
-         $(this).attr("disabled", true);
-      };
-      
       });
 
-  });
+    });
+  </script>
 
-});
-</script>
+  <!-- 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
 
-<script>
+  <script>
+    function resizeAudioProgressCover() {
+      let widthPostNum = document.querySelector('.post').offsetWidth;
+      let postAllObj = document.querySelectorAll('.post');
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
+      let imgAllObg = document.querySelectorAll('.img-fluid');
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.goooogle-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
 
-</script>
 
+      for (let i = 0; i < postAllObj.length; i++) {
+        postAllObj[i].style.height = widthPostNum + 'px';
+      }
+      for (let i = 0; i < imgAllObg.length; i++) {
+        imgAllObg[i].style.height = widthPostNum + 'px';
+      }
+    }
+    window.onload = resizeAudioProgressCover();
+    window.addEventListener('resize', () => {
+      resizeAudioProgressCover();
+    })
+  </script>
 </body>
+
 </html>
