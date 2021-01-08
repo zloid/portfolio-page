@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title></title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-
-  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      let n = ($(".htmlcssjs").length - 1);
-      $(".htmlcssjs-span").text(n);
-
-      let n2 = ($(".wordpress").length - 1);
-      $(".wordpress-span").text(n2);
-
-      let n4 = ($(".pureJs").length - 1);
-      $(".pureJsSpan").text(n4);
-
-      $(".all-span").text(n + n2 + n4);
-    });
-  </script>
+  <title>Sergey Voytehovich's portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="./src/css/styles.css">
 </head>
-
 <body>
-  <h1 align="center"><a target="_blank" href="https://web.facebook.com/sergey.voytehovich">Sergey Voytehovich <span
+
+  <h1 align="center"><a target="_blank" href="https://web.facebook.com/sergey.voytehovich">Sergey Voytehovich's <span
         class="port">port</span><img src="images/fb-left-aside.png" alt="fb icon">olio</a></h1>
 
   <div id="filter">
-    <button class="all active" disabled="disabled">ALL <span class="all-span"></span></button>
+    <button class="lall active" disabled="disabled">ALL <span class="all-span"></span></button>
     <button class="htmlcssjs">HTML, CSS, JS <span class="htmlcssjs-span"></span></button>
     <button class="wordpress">Wordpress <span class="wordpress-span"></span></button>
-    <button class="pureJs">JavaScript <span class="pureJsSpan"></span></button>
+    <button class="pureJs">Vanilla JS <span class="pureJsSpan"></span></button>
+    <button class="react">React <span class="reactSpan"></span></button>
     <a style="color: #fff" href="https://github.com/zloid"><u>GitHub</u></a>
   </div>
 
@@ -43,113 +26,105 @@
     <div id="posts">
       <div class="row">
 
+        <!--htmlcssjs 1-->
+        <div class="post htmlcssjs col-sm-3 p-0">
+          <!--      <a target="_blank" href="http://fast-search.zloid.ru/"> -->
+          <a target="_blank" href="https://zloid.github.io/Fast-Search/">
+            <p>bootstrap page from PSD layout</p>
+            <img class="img-fluid" src="images/fast-search-min.jpg" alt="image">
+          </a>
+        </div>
+        <!--htmlcssjs 2-->
         <div class="post htmlcssjs col-sm-3 p-0">
           <a target="_blank" href="http://zoo10.zloid.ru/fun-me-playlist.php">
-            <p>has made: bootstrap based site</p>
+            <p>bootstrap based site</p>
             <img class="img-fluid" src="images/zoo-10.jpg" alt="image">
           </a>
         </div>
+        <!--htmlcssjs 3-->
         <div class="post htmlcssjs col-sm-3 p-0">
           <a target="_blank" href="http://corporate-blue.zloid.ru/">
-            <p>has made: HTML + CSS from PSD layout</p>
+            <p>HTML + CSS from PSD layout</p>
             <img class="img-fluid" src="images/corporate-blue-2.jpg" alt="image">
           </a>
         </div>
+        <!--htmlcssjs 4-->
         <div class="post htmlcssjs col-sm-3 p-0">
           <a target="_blank" href="http://deals-site.zloid.ru/">
-            <p>has made: HTML + CSS from PSD layout</p>
+            <p>HTML + CSS from PSD layout</p>
             <img class="img-fluid" src="images/deals-fest-site-4.jpg" alt="image">
           </a>
         </div>
+        <!--wordpress 1-->
         <div class="post wordpress col-sm-3 p-0">
           <a target="_blank" href="http://stroika-1.ru/oremonte/vetryak-dlya-chastnogo-doma.html">
-            <p>has made: install on server, configured plugins and ads, posted articles. Traffic: 200 per day</p>
+            <p>install on server, configured plugins and ads, posted articles. Traffic: 250 per day</p>
             <img class="img-fluid" src="images/stroika-1-ru-3.jpg" alt="image">
           </a>
         </div>
+        <!--pureJs 1-->
         <div class="post pureJs col-sm-3 p-0">
-          <a target="_blank" href="http://calc.zloid.ru/">
-            <p>has made: math calculator on pure JS</p>
-            <img class="img-fluid" src="images/pureJsCalc-2.jpg" alt="image">
+          <a target="_blank" href="https://zloid.github.io/math-calc/">
+            <p>math calculator on pure JS</p>
+            <img class="img-fluid" src="images/zloid.github.io_math-calc_.png" alt="image">
           </a>
         </div>
+        <!--pureJs 2-->
         <div class="post pureJs col-sm-3 p-0">
-          <a target="_blank" href="http://player.zloid.ru/">
-            <p>has made: Audio player on pure JS</p>
+          <a target="_blank" href="https://zloid.github.io/audio-player/">
+            <p>Audio player on pure JS</p>
             <img class="img-fluid" src="images/player-zloid-ru-6.jpg" alt="image">
+          </a>
+        </div>
+        <!--react app 1-->
+        <div class="post react col-sm-3 p-0">
+          <a target="_blank" href="http://balance.zloid.ru/">
+            <p>App for finding errors in the account balance</p>
+            <img class="img-fluid" src="images/debet-3.jpg" alt="image">
+          </a>
+        </div>
+        <!--react app 2-->
+        <div class="post react col-sm-3 p-0">
+          <a target="_blank" href="http://figma-template-to-react.zloid.ru/">
+            <p>Figma template + React + CSS-in-JS (Styled Components)</p>
+            <img class="img-fluid" src="images/react-from-figma-tmplt.jpg" alt="image">
+          </a>
+        </div>
+        <!--react app 3-->
+        <div class="post react col-sm-3 p-0">
+          <a target="_blank" href="http://currency-app.zloid.ru/">
+            <p>React + Redux CRUD App</p>
+            <img class="img-fluid" src="images/currency-processing-app.png" alt="image">
           </a>
         </div>
 
       </div><!-- <div class="row"> -->
     </div><!-- <div id="posts"> -->
+    <!-- <div id="posts2" style="border: 5px solid gold">posts2</div> -->
+
     <div class="hidden"></div>
+
   </div><!-- <div class="container"> -->
 
   <script>
-    $(document).ready(function () {
+    let allPosts = document.querySelectorAll('.post')
 
-      $('.hidden').css('display', 'none');
-
-      $("#filter button").each(function () {
-
-        $(this).on("click", function () {
-
-          let filter = $(this).attr('class');
-
-          if ($(this).attr('class') == 'all') {
-            $('.hidden').contents().appendTo('#posts').hide().show('slow');
-            $("#filter button").removeClass('active');
-            $(this).addClass('active');
-            $("#filter button").attr("disabled", false);
-            $(this).attr("disabled", true);
-          }
-          else {
-            $('.post').appendTo('.hidden');
-            $('.hidden').contents().appendTo('#posts').hide().show('slow');
-            $('.post:not(.' + filter + ')').appendTo('.hidden').hide('slow');
-            $("#filter button").removeClass('active');
-            $(this).addClass('active');
-            $("#filter button").attr("disabled", false);
-            $(this).attr("disabled", true);
-          };
-
-        });
-
-      });
-
-    });
-  </script>
-
-  <!-- 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"></script>
--->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
-
-  <script>
-    function resizeAudioProgressCover() {
-      let widthPostNum = document.querySelector('.post').offsetWidth;
-      let postAllObj = document.querySelectorAll('.post');
-
-      let imgAllObg = document.querySelectorAll('.img-fluid');
-
-
-
-      for (let i = 0; i < postAllObj.length; i++) {
-        postAllObj[i].style.height = widthPostNum + 'px';
-      }
-      for (let i = 0; i < imgAllObg.length; i++) {
-        imgAllObg[i].style.height = widthPostNum + 'px';
-      }
+    function animationForDiv(nodeList, speed = 0.5) {
+      nodeList.forEach(e => {
+        e.style.transform = 'scale(.3,.3)'
+        setTimeout(() => {
+          e.style.transition = `${speed}s ease-in-out`
+          e.style.transform = 'scale(1,1)'
+        }, 1)
+      })
     }
-    window.onload = resizeAudioProgressCover();
-    window.addEventListener('resize', () => {
-      resizeAudioProgressCover();
-    })
+
+    animationForDiv(allPosts, .6)
   </script>
+
+  <script src="./src/js/resizeThumbnailsAdaptively.js"></script>
+  <script src="./src/js/menuActions.js"></script>
+  <script src="./src/js/notificationPush.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "0.1.2",
+  "description": "simple portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zloid/portfolio.git"
+  },
+  "keywords": [],
+  "author": "zloid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zloid/portfolio/issues"
+  },
+  "homepage": "https://zloid.github.io/"
+}
